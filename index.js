@@ -402,3 +402,36 @@ for (let i = 1; i <= rows; i++) {
 }
 
 */
+
+/* functions 
+
+let userName;
+let age;
+happyBirthday("Hila Serban", 25);
+
+function happyBirthday(userName, age) {
+  console.log("Happy birthday to you!");
+  console.log("Happy birthday to you!");
+  console.log("Happy birthday dear " + userName);
+  console.log("Happy birthday to you!");
+  console.log("You are " + age + " years old");
+}
+
+// return 
+
+let area;
+let width;
+let height;
+
+width = window.prompt("Enter width");
+height = window.prompt("Enter height");
+
+area = getArea(width, height);
+
+console.log(area);
+
+function getArea(width, height) {
+  let result = width * height;
+  return result;
+}
+*/
