@@ -435,3 +435,15 @@ function getArea(width, height) {
   return result;
 }
 */
+
+/* ternary operatior
+
+let adult = checkAge(10);
+console.log(adult);
+
+function checkAge(age) {
+  return age >= 18 ? true : false;
+}
+
+*/
+
