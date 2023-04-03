@@ -1,0 +1,17 @@
+#countLabel {
+  display: block;
+  text-align: center;
+  font-size: 50px;
+}
+
+.countBtns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.countBtn {
+  margin: 5px;
+  padding: 10px;
+  font-size: 20px;
+}

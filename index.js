@@ -88,11 +88,11 @@
 
 // Math object
 
-let x = -3.14;
-let y = 5;
-let z = 9;
-let maximum;
-let minimum;
+// let x = -3.14;
+// let y = 5;
+// let z = 9;
+// let maximum;
+// let minimum;
 
 // x = Math.round(x); // round to nearest
 // x = Math.floor(x); // round to floor 
@@ -110,9 +110,9 @@ let minimum;
 
 // Hypotenuse of a right angle triangle
 
-let a;
-let b;
-let c;
+// let a;
+// let b;
+// let c;
 /* 
 a = window.prompt("Enter side A: ");
 a = Number(a);
@@ -126,14 +126,33 @@ c = Math.sqrt(c);
 console.log("Hypotenuse is : " + c);
 */
 
-document.getElementById("submitButton").onclick = function(){
-  a = document.getElementById("aTextBox").value;
-  a = Number(a);
+// document.getElementById("submitButton").onclick = function(){
+//   a = document.getElementById("aTextBox").value;
+//   a = Number(a);
 
-  b = document.getElementById("bTextBox").value;
-  b = Number(b);
+//   b = document.getElementById("bTextBox").value;
+//   b = Number(b);
 
-  c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+//   c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
 
-  document.getElementById("cLabel").innerHTML = "Side C: " + c;
+//   document.getElementById("cLabel").innerHTML = "Side C: " + c;
+// }
+
+// Count program
+
+let count = 0;
+
+document.getElementById("decreaseBtn").onclick = function(){
+  count -= 1;
+  document.getElementById("countLabel").innerHTML = count;
+}
+
+document.getElementById("resetBtn").onclick = function(){
+  count = 0;
+  document.getElementById("countLabel").innerHTML = count;
+}
+
+document.getElementById("increaseBtn").onclick = function(){
+  count += 1;
+  document.getElementById("countLabel").innerHTML = count;
 }
