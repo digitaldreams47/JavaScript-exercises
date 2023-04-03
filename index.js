@@ -342,4 +342,63 @@ if (!sunny) {
 
 */
 
+/* while loop
 
+let userName = "";
+
+while (userName == "" || userName == null) {
+  userName = window.prompt("Enter your name");
+}
+
+console.log("Hello, " + userName);
+
+*/
+
+/* do while loop
+
+let userName;
+
+do {
+  userName = window.prompt("Enter your name");
+} while (userName == "") 
+
+console.log("Hello, " + userName);
+
+*/
+
+/* for loops
+
+for(let i = 0; i <= 10; i++) {
+  console.log(i);
+}
+
+*/
+
+/* break and continue 
+
+for (let i = 1; i <= 20; i++) {
+  // if (i == 12){
+  //   break; // break loop
+  // }
+  if (i == 14) {
+    continue; // continue loop
+  }
+  console.log(i);
+}
+
+*/
+
+/* neste loops
+
+let symbol = window.prompt("Enter a symbol to use")
+let rows = window.prompt('Enter number of rows');
+let columns = window.prompt('Enter number of columns');
+
+for (let i = 1; i <= rows; i++) {
+  for (let j = 1; j <= columns; j++) {
+    document.getElementById("myRectangle").innerHTML += symbol;
+  }
+  document.getElementById("myRectangle").innerHTML += "<br>";
+}
+
+*/
