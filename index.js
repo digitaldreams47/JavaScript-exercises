@@ -255,7 +255,7 @@ if (online) {
 
 */
 
-// Checked property 
+/* Checked property 
 
 
 document.getElementById("myBtn").onclick = function() {
@@ -282,3 +282,28 @@ document.getElementById("myBtn").onclick = function() {
   }
 }
 
+*/
+
+// Switches 
+
+let grade = "4.5";
+
+switch (grade) {
+  case "10": 
+    console.log("You have maximum grade");
+    break;
+  case "8":
+    console.log("You did good!");
+    break;
+  case "6":
+    console.log("You did okay!");
+    break;
+  case "4.5":
+    console.log("You passed ...");
+    break;
+  case "2":
+    console.log("You Failed!");
+    break;
+  default:
+    console.log(grade + " is not valid.");
+}
