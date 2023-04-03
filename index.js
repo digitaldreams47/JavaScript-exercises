@@ -37,13 +37,38 @@
 
 // let userName = window.prompt("What`s your name?");
 // console.log("userName: " + userName);
-let userName;
+// let userName;
 
-document.getElementById("myButton").onclick = function(){
-  userName = document.getElementById("textName").value;
-  console.log("userName: " + userName);
-  document.getElementById("myLabel").innerHTML = "Hello " + userName + ":";
-}
+// document.getElementById("myButton").onclick = function(){
+//   userName = document.getElementById("textName").value;
+//   console.log("userName: " + userName);
+//   document.getElementById("myLabel").innerHTML = "Hello " + userName + ":";
+// }
 
 
-document.getElementById("textName").value = "Serban";
+// document.getElementById("textName").value = "Serban";
+
+
+// Type Conversions
+// user input is a string
+
+// let age = window.prompt("How old are you?");
+
+// console.log(typeof age);
+
+// age = Number(age);
+// age += 1;
+
+// console.log("Age: " + age);
+
+let x;
+let y;
+let z;
+
+x = Number("3.14");
+y = String(3.14);
+z = Boolean("");
+
+console.log(x, typeof x);
+console.log(y, typeof y);
+console.log(z, typeof z);
