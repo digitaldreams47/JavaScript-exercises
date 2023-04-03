@@ -168,7 +168,6 @@ console.log("Hypotenuse is : " + c);
  }
 */
 
-
 /* Random number generator 
 let x;
 let y;
@@ -225,3 +224,8 @@ console.log(firstName);
 
 */
 
+/* Method chaining */
+
+let userName = "hila";
+let letter = userName.charAt(0).toUpperCase();
+console.log(letter);
