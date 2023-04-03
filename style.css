@@ -18,3 +18,17 @@
   font-size: 20px;
 } */
 
+.cardPayment {
+  display: flex;
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+
+.cardPayment div {
+  margin-left: 1em;
+}
+
+#myBtn {
+  margin-left: 1em;
+  padding: 1em;
+}
