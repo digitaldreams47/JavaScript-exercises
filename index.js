@@ -470,3 +470,25 @@ let total = 55;
 // document.getElementById('myLabel').innerHTML = text;
 
 */
+
+/* toLocaleString() 
+
+// number.toLocaleString(locale, {options})
+// 'locale' specify the language
+// 'options' object formatting options
+
+let myNumber = .12;
+// myNumber = myNumber.toLocaleString("en-US"); // US english
+// myNumber = myNumber.toLocaleString("hi-IN"); // Hindi
+// myNumber = myNumber.toLocaleString("de-DE"); // German
+
+// myNumber = myNumber.toLocaleString("en-US", {style: "currency", currency: "USD"});
+// myNumber = myNumber.toLocaleString("hi-IN", {style: "currency", currency: "INR"});
+// myNumber = myNumber.toLocaleString("de-DE", {style: "currency", currency: "EUR"});
+
+// myNumber = myNumber.toLocaleString(undefined, {style: "percent"});
+
+// myNumber = myNumber.toLocaleString(undefined, {style: "unit", unit: "celsius"})
+console.log("Number: " + myNumber);
+
+*/
