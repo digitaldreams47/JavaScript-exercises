@@ -169,7 +169,7 @@ console.log("Hypotenuse is : " + c);
 */
 
 
-/* Random number generator */
+/* Random number generator 
 let x;
 let y;
 let z;
@@ -184,3 +184,44 @@ document.getElementById("rollButton").onclick = function() {
   document.getElementById("yLabel").innerHTML = y;
   document.getElementById("zLabel").innerHTML = z;
 }
+
+*/
+
+/* Useful String properties and methods
+
+let userName = "Hila Serban Mihai";
+let phoneNumber = "0756-16-09-73";
+const nameLength = userName.length;
+console.log(nameLength);
+
+let firstLetter = userName.charAt(5);
+console.log(firstLetter);
+
+console.log(userName.indexOf("M"));
+console.log(userName.lastIndexOf("a"));
+
+userName = userName.trim();
+userName = userName.toLowerCase();
+userName = userName.toUpperCase();
+
+phoneNumber = phoneNumber.replaceAll("-", " ");
+console.log(phoneNumber);
+
+*/
+
+/* Slice method slice()
+
+let fullName = "Hila Serban Mihai";
+let firstName;
+let lastName;
+
+lastName = fullName.slice(5);
+firstName = fullName.slice(0, 4);
+lastName = fullName.slice(fullName.indexOf(" ") + 1);
+firstName = fullName.slice(0, fullName.indexOf(" "));
+
+console.log(lastName);
+console.log(firstName);
+
+*/
+
