@@ -284,7 +284,7 @@ document.getElementById("myBtn").onclick = function() {
 
 */
 
-// Switches 
+/* Switches 
 
 let grade = "4.5";
 
@@ -307,3 +307,39 @@ switch (grade) {
   default:
     console.log(grade + " is not valid.");
 }
+
+*/
+
+// Logical operators
+
+/* And and OR
+let temp = 15;
+let sunny = true;
+
+if ((temp > 0) && temp < 25 && sunny) {
+  console.log("Is cold outside");
+} else {
+  console.log("Is hot outside");
+}
+*/
+
+/* ! NOT
+
+let temp = 10;
+let sunny = true;
+
+if (!(temp > 0)) {
+  console.log("Is cold outside");
+} else {
+  console.log("Is hot outside");
+}
+
+if (!sunny) {
+  console.log("It s sunny outside");
+} else {
+  console.log("It s cloudy outside");
+}
+
+*/
+
+
