@@ -224,8 +224,33 @@ console.log(firstName);
 
 */
 
-/* Method chaining */
+/* Method chaining 
 
 let userName = "hila";
 let letter = userName.charAt(0).toUpperCase();
 console.log(letter);
+
+*/
+
+/* if else statements */
+
+ let age = -1;
+
+if (age >= 18){
+  console.log("You are an adult");
+} else if (age < 0){
+  console.log("You haven`t been born");
+}
+else {
+  console.log("You are child");
+}
+
+let online = true;
+
+if (online) {
+  console.log("You are online");
+} else {
+  console.log("You are not online");
+}
+
+
