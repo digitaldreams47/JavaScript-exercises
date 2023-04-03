@@ -447,3 +447,26 @@ function checkAge(age) {
 
 */
 
+/* template literals (`)
+
+let userName = "Hila Serban";
+let items = 3;
+let total = 55;
+
+// console.log("Hello, ", userName);
+// console.log("You have", items, "items in your collection");
+// console.log("Your total is $", total);
+
+// console.log(`Hello ${userName}`);
+// console.log(`You have ${items}`);
+// console.log(`Your total is ${total}`);
+
+// const text = 
+// `Hello ${userName}<br>
+// You have ${items}<br>
+// Your total is ${total}
+// `
+
+// document.getElementById('myLabel').innerHTML = text;
+
+*/
