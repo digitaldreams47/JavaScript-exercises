@@ -17,18 +17,33 @@
 
 // Arithmetic expressions
 
-let students = 20;
+// let students = 20;
 
-// students += 1;
-// students -= 1;
-// students *= 1;
-// students /= 1;
-let extraStudents;
-extraStudents = students % 3;
+// // students += 1;
+// // students -= 1;
+// // students *= 1;
+// // students /= 1;
+// let extraStudents;
+// extraStudents = students % 3;
 
-console.log("students: " + students);
-console.log("extraStudents: " + extraStudents);
+// console.log("students: " + students);
+// console.log("extraStudents: " + extraStudents);
 
 
-let result = 1 + 2 * (3 + 4);
-console.log("result: " + result);
+// let result = 1 + 2 * (3 + 4);
+// console.log("result: " + result);
+
+// Accept user input
+
+// let userName = window.prompt("What`s your name?");
+// console.log("userName: " + userName);
+let userName;
+
+document.getElementById("myButton").onclick = function(){
+  userName = document.getElementById("textName").value;
+  console.log("userName: " + userName);
+  document.getElementById("myLabel").innerHTML = "Hello " + userName + ":";
+}
+
+
+document.getElementById("textName").value = "Serban";
