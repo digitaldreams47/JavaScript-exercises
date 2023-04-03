@@ -75,13 +75,65 @@
 
 // Const variable = a variable that cannot be changed
 
-const PI = 3.14159;
-let radius;
-let circumference;
+// const PI = 3.14159;
+// let radius;
+// let circumference;
 
-radius = window.prompt("Enter the radius of a circle: ");
-radius = Number(radius);
+// radius = window.prompt("Enter the radius of a circle: ");
+// radius = Number(radius);
 
-circumference = 2 * PI * radius;
+// circumference = 2 * PI * radius;
 
-console.log("Circumference is :" + circumference);
+// console.log("Circumference is :" + circumference);
+
+// Math object
+
+let x = -3.14;
+let y = 5;
+let z = 9;
+let maximum;
+let minimum;
+
+// x = Math.round(x); // round to nearest
+// x = Math.floor(x); // round to floor 
+// x = Math.ceil(x); // round to ceil
+// x = Math.pow(x, 5);
+// x = Math.sqrt(x);
+// x = Math.abs(x);
+// maximum = Math.max(x, y);
+// minimum = Math.min(x, y);
+// console.log(maximum);
+// console.log(minimum);
+
+// x = Math.PI;
+// console.log(x)
+
+// Hypotenuse of a right angle triangle
+
+let a;
+let b;
+let c;
+/* 
+a = window.prompt("Enter side A: ");
+a = Number(a);
+
+b = window.prompt("Enter side B: ");
+b = Number(b);
+
+c = Math.pow(a, 2) + Math.pow(b, 2);
+c = Math.sqrt(c);
+
+console.log("Hypotenuse is : " + c);
+*/
+
+document.getElementById("submitButton").onclick = function(){
+  a = document.getElementById("aTextBox").value;
+  a = Number(a);
+
+  b = document.getElementById("bTextBox").value;
+  b = Number(b);
+
+  c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+
+  document.getElementById("cLabel").innerHTML = "Side C: " + c;
+}
