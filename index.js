@@ -515,7 +515,7 @@ document.getElementById("submitBtn").onclick = function () {
 */
 
 
-// Temperature conversion program
+/* Temperature conversion program
 
 document.getElementById("submitButton").onclick = function() {
   let temp;
@@ -543,3 +543,204 @@ function toCelsius (temperature) {
 function toFahrenheit (temperature) {
   return temperature * 9 / 5 + 32;
 }
+
+*/
+
+// arrays 
+
+/* some arrays methods 
+let fruits = ["apple", "orange", "banana"];
+
+fruits.push("lime"); // add an element
+fruits.pop(); // remove last element
+fruits.unshift("mango"); // add element to beginning
+fruits.shift(); // remove first element
+
+console.log(fruits);
+console.log(fruits.length); // length of fruits
+console.log(fruits.indexOf("apple")); // index of apple
+
+*/
+
+/* loop through array
+
+let prices = [5, 10, 15, 25, 30];
+
+// for(let i = 0; i < prices.length; i++) {
+//   console.log(prices[i]);
+// }
+
+for(let price of prices) {
+  console.log(price);
+}
+
+*/
+
+/* sort array 
+
+let fruits = ["banana", "tomato", "mango", "apple", "berry"];
+// fruits = fruits.sort(); // sort by name
+fruits = fruits.sort().reverse(); // reverse
+for(let fruit of fruits) {
+  console.log(fruit);
+}
+*/
+
+/* 2d array
+
+let fruits = ["bananas", "tomatoes", "mangos", "apples"];
+let vegetables = ["carrots", "onions", "potatoes"];
+let meats = ["eggs", "chicken", "fish"];
+
+let groceryList = [fruits, vegetables, meats];
+
+groceryList[0][3] = "mangos";
+
+for(let list of groceryList) {
+  for(let food of list) {
+    console.log(food);
+  }
+}
+*/
+
+/* spread operator ... 
+
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// console.log(Math.max(...numbers));
+
+let class1 = ["Hila", "Serban", "Mihai"];
+let class2 = ["Carmen", "Calin", "George"];
+
+class1.push(...class2);
+console.log(...class1);
+
+*/
+
+/* rest parameters 
+
+let a = 1;
+let b = 2;
+let c = 3;
+let d = 4;
+let e = 5;
+let f = 6;
+
+console.log(sum(a,b,c,d,e,f));
+
+function sum(...numbers) {
+  let total = 0;
+  for(let number of numbers) {
+    total += number;
+  }
+  return total;
+}
+*/
+
+/* callback 
+
+sum(2,3, displayDOM);
+
+function sum(x,y, callback){
+  let result = x + y;
+  callback(result);
+}
+
+function displayConsole(output) {
+  console.log(output);
+}
+
+function displayDOM(output) {
+  document.getElementById("myLabel").innerHTML = output;
+}
+*/
+
+/* arrat.forEach() 
+
+let students = ["serban", "adrian", "john", "robert"];
+students.forEach(capitalize);
+students.forEach(print);
+
+function capitalize(element, index, array){
+  array[index] = element[0].toUpperCase() + element.substring(1);
+}
+
+function print(element) {
+  console.log(element);
+}
+
+*/
+
+/* array.map() 
+
+let numbers = [1,2,3,4,5,6,7,8,9,10];
+let squares = numbers.map(square);
+let cubes = numbers.map(cube);
+
+// squares.forEach(print);
+cubes.forEach(print);
+
+function square(element) {
+  return Math.pow(element, 2);
+}
+
+function cube(element) {
+  return Math.pow(element, 3);
+}
+
+function print (element) {
+  console.log(element);
+}
+
+*/
+
+/* array.filter() 
+
+let ages = [18, 20, 12, 90, 55, 24];
+let adults = ages.filter(checkAge);
+
+adults.forEach(print);
+
+function checkAge(element) {
+  return element >= 18;
+}
+
+function print(element) {
+  console.log(element);
+}
+
+*/
+
+/* array.reduce() 
+
+let prices = [2, 5, 10, 20, 30, 23, 50, 55];
+let total = prices.reduce(checkOut);
+
+console.log(`The total is: ${total}`);
+
+function checkOut(total, element){
+  return total + element;
+}
+
+*/
+
+/* sort an array of numbers 
+
+let grades = [100, 40, 70, 55, 23, 25, 95];
+
+grades = grades.sort(ascendingSort);
+grades.forEach(print);
+
+function descendingSort(x,y){
+  return y - x;
+}
+
+function ascendingSort(x,y){
+  return x - y;
+}
+
+function print(element){
+  console.log(element);
+}
+
+*/
+
