@@ -744,3 +744,39 @@ function print(element){
 
 */
 
+/* function expression = function without a name 
+
+// const greeting = function(){
+//   console.log("hello");
+// }
+
+// greeting();
+
+let count = 0;
+
+document.getElementById("increaseBtn").onclick = function(){
+  count++;
+  document.getElementById("myLabel").innerHTML = count;
+}
+
+document.getElementById("decreaseBtn").onclick = function(){
+  count--;
+  document.getElementById("myLabel").innerHTML = count;
+}
+
+*/
+
+/* arrow function => 
+
+const greeting = userName => console.log(`Hello ${userName}`);
+greeting("Serban");
+
+const percent = (x, y) => x / y * 100;
+console.log(`${percent(75, 150)}`);
+
+let grades = [100, 33, 26, 70, 56, 66];
+
+grades.sort((a, b) => b - a);
+grades.forEach(grade => console.log(grade));
+
+*/
