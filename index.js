@@ -493,7 +493,7 @@ console.log("Number: " + myNumber);
 
 */
 
-// Number guessing game
+/* Number guessing game
 
 const answer = Math.floor((Math.random() * 10 + 1));
 let guesses = 0;
@@ -510,4 +510,36 @@ document.getElementById("submitBtn").onclick = function () {
   else {
     alert("Too large! Please try again");
   }
+}
+
+*/
+
+
+// Temperature conversion program
+
+document.getElementById("submitButton").onclick = function() {
+  let temp;
+  
+  if (document.getElementById("celsiusButton").checked) {
+    temp = document.getElementById("textBox").value;
+    temp = Number(temp);
+    temp = toCelsius(temp);
+    document.getElementById("tempLabel").innerHTML = temp + "°C";
+  } else if (document.getElementById("fahrenheitButton").checked) {
+    temp = document.getElementById("textBox").value;
+    temp = Number(temp);
+    temp = toFahrenheit(temp);
+    document.getElementById("tempLabel").innerHTML = temp + "°F";
+  } 
+  else {
+    document.getElementById("tempLabel").innerHTML = "Please select a unit to convert";
+  }
+}
+
+function toCelsius (temperature) {
+  return (temperature - 32) * (5 / 9);
+}
+
+function toFahrenheit (temperature) {
+  return temperature * 9 / 5 + 32;
 }
