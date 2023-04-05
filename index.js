@@ -803,3 +803,30 @@ function shuffle(array) {
   return array;
 }
 */
+
+/* nested functions - function inside other function 
+
+let userName = "Hila Serban";
+let userInbox = 0;
+login();
+// displayUserInbox(); - must be called login() first
+// displayUserName();
+
+function login () {
+  displayUserInbox();
+  displayUserName();
+  function displayUserName () {
+    console.log(`Hello ${userName}`);
+  }
+  
+  function displayUserInbox () {
+    console.log(`You have ${userInbox} new messages`);
+  }
+}
+
+*/
+
+
+
+
+
