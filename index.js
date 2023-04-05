@@ -1172,3 +1172,24 @@ cards.forEach(card => console.log(card.value + " " + card.suit));
 
 */
 
+/* Error handling  - TypeError, User types incorrect input, Lose Connection etc... 
+
+try {
+  let x = window.prompt("Enter a number");
+  x = Number(x);
+
+  if (isNaN(x)) throw "That number must be a number";
+  if (x == "") throw "That was empty string";
+
+  console.log(`${x} is a number`);
+
+} catch (error) {
+  console.log(error);
+} 
+finally {
+  console.log("This always succeeded");
+}
+
+*/
+
+
