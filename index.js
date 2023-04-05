@@ -851,7 +851,36 @@ store.forEach((value, key) => console.log(`${key} ${value} lei`));
 */
 
 
+/* objects - group of properties and methods 
 
+const car = {
+  model: "Mustang",
+  color: "red",
+  year: 2023,
 
+  drive : function() {
+     console.log(`You drive the car ${car.model}`);
+  },
+  brake: function() {
+    console.log("You step on the breaks");
+  }
+}
 
+const car2 = {
+  model: "Dacie",
+  color: "blue",
+  year: 2025,
+
+  drive : function() {
+     console.log(`You drive the car ${car.model}`);
+  },
+  brake: function() {
+    console.log("You step on the breaks");
+  }
+}
+
+car.drive();
+console.log(car2.model);
+
+*/
 
