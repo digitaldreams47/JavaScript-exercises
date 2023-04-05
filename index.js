@@ -884,3 +884,36 @@ console.log(car2.model);
 
 */
 
+/* this keyword - reference to particular object 
+
+const phone1 = {
+  model: "Iphone 13 Pro",
+  color: "blue",
+  year: 2022,
+
+  turnOn : function () {
+    console.log(`You have successfully turned on your ${this.model}`);
+  },
+
+  shutDown : function () {
+    console.log(`You have successfully shut down on your ${this.model}`);
+  }
+}
+
+const phone2 = {
+  model: "Samsung S22",
+  color: "black",
+  year: 2022,
+
+  turnOn : function () {
+    console.log(`You have successfully turned on your ${this.model}`);
+  },
+
+  shutDown : function () {
+    console.log(`You have successfully shut down on your ${this.model}`);
+  }
+}
+
+phone1.turnOn();
+
+*/
