@@ -826,6 +826,31 @@ function login () {
 
 */
 
+/* maps - hold key-value pair of any data type 
+
+const store = new Map([
+  ["t-shirt", 20],
+  ["jeans", 33],
+  ["socks", 11],
+  ["scarf", 22]
+]);
+
+let shoppingCart = 0;
+
+shoppingCart += store.get("t-shirt");
+shoppingCart += store.get("scarf");
+
+store.set("hat", 45);
+store.delete("t-shirt");
+console.log(store.has("t-shirt"));
+console.log(store.size);
+
+console.log(shoppingCart);
+store.forEach((value, key) => console.log(`${key} ${value} lei`));
+
+*/
+
+
 
 
 
