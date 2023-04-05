@@ -917,3 +917,258 @@ const phone2 = {
 phone1.turnOn();
 
 */
+
+/* class - blueprint for creating objects 
+
+class Player {
+  score = 0;
+
+  pause (){
+    console.log("You paused the game");
+  }
+
+  exit (){
+    console.log("You exited the game");
+  }
+}
+
+const player = new Player();
+const player1 = new Player();
+const player2 = new Player();
+player.score++;
+console.log(player.score);
+player2.pause();
+player1.exit();
+
+*/
+
+/* Constructor - special method of a class for creating objects 
+
+class Student {
+  constructor(name, age, grade) {
+    this.name = name;
+    this.age = age;
+    this.grade = grade;
+  }
+
+  study() {
+    console.log(`${this.name} is studying`)
+  }
+}
+
+const serbanStudentul = new Student("Hila Serban", 25, 10);
+const mihaiStudentul = new Student("Mihai Serban", 23, 9.5);
+
+console.log(serbanStudentul.age, serbanStudentul.grade, serbanStudentul.name);
+console.log(mihaiStudentul.age, mihaiStudentul.grade, mihaiStudentul.name);
+serbanStudentul.study();
+
+*/
+
+/* static keyword - belongs to the class 
+
+class Phone {
+  static numberOfPhones = 0;
+
+  constructor(model) {
+    this.model = model;
+    Phone.numberOfPhones++;
+  }
+
+  static startPhone(){
+    console.log("3...2...1...GO! Use your phone");
+  }
+}
+
+const phone1 = new Phone("Iphone");
+const phone2 = new Phone("Samsung");
+const phone3 = new Phone("Huawei");
+
+console.log(phone1.model, phone2.model, phone3.model);
+console.log(Phone.numberOfPhones);
+Phone.startPhone();
+
+*/
+
+/* inheritance = a child class can inherit all methods 
+                  and properties form another class 
+
+class Human { 
+  alive = true;
+  name = "Serban";
+
+  eat() {
+    console.log(`This ${this.name} is eating`);
+  }
+
+  dead() {
+    console.log(`This ${this.name} is alive = ${this.alive}`);
+  }
+}
+
+class Child extends Human{
+  walk() {
+    console.log(`This ${this.name} is walking`);
+  }
+}
+
+const child = new Child();
+child.dead();
+child.walk();
+
+*/
+
+/* super keyword = Refer to a parent class. Used to invoke constructor of a parent class 
+
+class Human {
+  constructor(name, age){
+    this.name = name;
+    this.age = age;
+  }
+}
+
+class Child extends Human {
+  constructor(name, age, isCrying) { 
+    super(name, age);
+    this.isCrying = isCrying;
+  }
+}
+
+class Man extends Human {
+  constructor(name, age, isHappy) { 
+    super(name, age);
+    this.isHappy = isHappy;
+  }
+}
+
+class Woman extends Human {
+  constructor(name, age, isSad) { 
+    super(name, age);
+    this.isSad = isSad;
+  }
+}
+
+const child = new Child("Matei", 6, true);
+const man = new Man("Firu", 26, true);
+const woman = new Woman("Monica", 36, false);
+
+console.log(child.name, child.age, child.isCrying);
+console.log(man.name, man.age, man.isHappy);
+console.log(woman.name, woman.age, woman.isSad);
+
+*/
+
+/* getters and setters - bind an object property to a function 
+
+class Car {
+  constructor(horsePower) {
+    this._gas = 20;
+    this._horsePower = horsePower; // _horsePower protected property
+  }
+  get horsePower() {
+    return `${this._horsePower} hp`;
+  }
+
+  get gas() {
+    return `${this._gas} L`;
+  }
+
+  set gas(value) { 
+    if (value >= 50) {
+      value = 50;
+    } else if (value < 0) {
+      value = 0;
+    }
+    this._gas = value;
+  }
+}
+
+let ferrari = new Car(450);
+
+ferrari.gas = -1;
+console.log(ferrari.horsePower);
+console.log(ferrari.gas);
+
+*/
+
+/* pass objects as arguments 
+
+class Car {
+  constructor(model, year, color) {
+    this.model = model;
+    this.year = year;
+    this.color = color;
+  }
+}
+
+const ferrari = new Car("ferrari", 2022, "red");
+const dacie = new Car("dacie", 2019, "yellow");
+const lamborghini = new Car("lamborghini", 2023, "green");
+
+
+changeColor(lamborghini, "red");
+displayInfo(lamborghini);
+
+function displayInfo(car) {
+  console.log(car.model);
+  console.log(car.year);
+  console.log(car.color);
+}
+
+function changeColor (car, color) {
+  car.color = color;
+}
+
+*/
+
+/* array of objects 
+
+class Car {
+  constructor(model, year, color) {
+    this.model = model;
+    this.year = year;
+    this.color = color;
+  }
+
+  drive() {
+    console.log(`You drive ${this.model}`);
+  }
+}
+
+const ferrari = new Car("ferrari", 2022, "red");
+const dacie = new Car("dacie", 2019, "yellow");
+const lamborghini = new Car("lamborghini", 2023, "green");
+
+const cars = [ferrari, dacie, lamborghini];
+console.log(...cars);
+
+startRace(cars);
+
+function startRace(cars) {
+  for(const car of cars) {
+    car.drive();
+  }
+}
+
+*/
+
+/* annonymous objects = Object without a name 
+
+class Card{
+  constructor(value, suit) {
+    this.value = value;
+    this.suit = suit;
+  }
+}
+
+let cards = [
+              new Card("A", "Hearts"),
+              new Card("A", "Spades"),
+              new Card("A", "Diamond"),
+              new Card("A", "Clubs")
+            ];
+
+cards.forEach(card => console.log(card.value + " " + card.suit));
+
+*/
+
